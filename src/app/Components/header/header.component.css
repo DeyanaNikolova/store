@@ -1,0 +1,9 @@
+.justify-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.justify-between{
+    display: flex;
+    justify-content: space-between;
+}
