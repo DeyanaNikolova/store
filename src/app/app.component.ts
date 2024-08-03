@@ -13,6 +13,8 @@ import { MatTableModule } from '@angular/material/table';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatListModule } from '@angular/material/list';
+import { MatToolbarModule } from '@angular/material/toolbar'
+import { HeaderComponent } from './Components/header/header.component';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +22,7 @@ import { MatListModule } from '@angular/material/list';
   imports: [
     CommonModule,
     RouterOutlet,
+    HeaderComponent,
     MatSidenavModule,
     MatGridListModule,
     MatMenuModule,
@@ -31,6 +34,7 @@ import { MatListModule } from '@angular/material/list';
     MatBadgeModule,
     MatSnackBarModule,
     MatListModule,
+    MatToolbarModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
