@@ -1,0 +1,39 @@
+.card{
+    text-align: center;
+}
+
+.image{
+    margin-bottom: 0.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+}
+
+.card-details{
+    width: 100%;
+}
+
+.details{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.details:hover{
+    white-space: normal;
+}
+
+.card-action{
+    display: flex;
+    justify-content: space-between;
+}
+
+span{
+    opacity: 1;
+    color: #f87171;
+}
+
+.btn{
+    opacity: 1;
+    color: #6b7280
+}
