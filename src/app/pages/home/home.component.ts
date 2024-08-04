@@ -4,6 +4,7 @@ import { ProductsHeaderComponent } from './components/products-header/products-h
 import { FiltersComponent } from './components/filters/filters.component';
 import { CommonModule } from '@angular/common';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { ProductBoxComponent } from './components/product-box/product-box.component';
 
 const ROW_HEIGHT: { [id: number]: number } = { 1: 400, 3: 335, 4: 350 };
 
@@ -12,9 +13,10 @@ const ROW_HEIGHT: { [id: number]: number } = { 1: 400, 3: 335, 4: 350 };
   standalone: true,
   imports: [
     CommonModule,
-    MatSidenavModule,
     ProductsHeaderComponent,
     FiltersComponent,
+    ProductBoxComponent,
+    MatSidenavModule,
     MatGridListModule,
   ],
   templateUrl: './home.component.html',
