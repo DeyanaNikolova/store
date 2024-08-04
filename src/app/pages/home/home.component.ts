@@ -8,8 +8,12 @@ import { ProductsHeaderComponent } from './components/products-header.component'
   standalone: true,
   imports: [ MatSidenavModule, ProductsHeaderComponent ],
   templateUrl: './home.component.html',
-  // styleUrl: './home.component.css'
+  styleUrl: './home.component.css'
 })
 export class HomeComponent {
+cols = 3;
 
+  onColumnsCoutChange(colsNum: number): void{
+this.cols = colsNum
+  }
 }
