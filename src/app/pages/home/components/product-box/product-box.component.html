@@ -1,1 +1,19 @@
-<p>product-box works!</p>
+<mat-card class="card text-center">
+<div>
+    <img class=" image mb-1 mx-auto h-[200px]" 
+    src="https://via.placeholder.com/150"/>
+    <div class="card-details w-full">
+        <div>
+            <h5>Shoes</h5>
+            <p class="details truncate hover:whitespace-normal">Snickers</p>
+            <p>Description</p>
+        </div>
+        <div class="card-action">
+            <span class="text-red-400">{{ '150' | currency}}</span>
+            <button>
+                <mat-icon class="btn text-gray-500">shopping_cart</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>
+</mat-card>
