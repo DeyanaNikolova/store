@@ -15,7 +15,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { HeaderComponent } from './Components/header/header.component';
-import { HomeComponent } from './pages/home/home.component';
+
 
 @Component({
   selector: 'app-root',
@@ -24,7 +24,6 @@ import { HomeComponent } from './pages/home/home.component';
     CommonModule,
     RouterOutlet,
     HeaderComponent,
-    HomeComponent,
     MatSidenavModule,
     MatGridListModule,
     MatMenuModule,
