@@ -1,5 +1,5 @@
 <mat-card  [ngClass]="{'text-center': !fullWidthMode}">
-<div>
+<div [ngClass]="{'flex': fullWidthMode}">
     <img class=" image" 
     [ngClass]="{'h-200px': !fullWidthMode, 'h-[360]': fullWidthMode}"
     src="https://images.unsplash.com/photo-1719090024435-d0e527968e55?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D"/>
