@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { ProductsHeaderComponent } from './components/products-header.component';
+
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [ MatSidenavModule, ProductsHeaderComponent ],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  // styleUrl: './home.component.css'
 })
 export class HomeComponent {
 
