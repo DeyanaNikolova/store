@@ -1,17 +1,18 @@
-<mat-card class="card text-center">
+<mat-card  [ngClass]="{'text-center': !fullWidthMode}">
 <div>
-    <img class=" image mb-1 mx-auto h-[200px]" 
-    src="https://via.placeholder.com/150"/>
-    <div class="card-details w-full">
+    <img class=" image" 
+    [ngClass]="{'h-200px': !fullWidthMode, 'h-[360]': fullWidthMode}"
+    src="https://images.unsplash.com/photo-1719090024435-d0e527968e55?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D"/>
+    <div class="card-details">
         <div>
             <h5>Shoes</h5>
             <p class="details truncate hover:whitespace-normal">Snickers</p>
             <p>Description</p>
         </div>
         <div class="card-action">
-            <span class="text-red-400">{{ '150' | currency}}</span>
+            <span>{{ '150' | currency}}</span>
             <button>
-                <mat-icon class="btn text-gray-500">shopping_cart</mat-icon>
+                <mat-icon class="btn">shopping_cart</mat-icon>
             </button>
         </div>
     </div>
