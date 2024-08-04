@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 
@@ -10,4 +10,6 @@ import { MatIconModule } from '@angular/material/icon';
   templateUrl: './product-box.component.html',
   styleUrl: './product-box.component.css',
 })
-export class ProductBoxComponent {}
+export class ProductBoxComponent {
+  @Input() fullWidthMode = false;
+}
