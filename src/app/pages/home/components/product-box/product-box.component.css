@@ -1,5 +1,15 @@
-.card{
+.text-center{
     text-align: center;
+}
+.text-left{
+text-align: left;
+}
+.flex{
+    display: flex;
+}
+
+.block{
+    display: block;
 }
 
 .image{
@@ -9,6 +19,13 @@
 }
 .card-details{
     width: 100%;
+}
+.card-details-full{
+    display: flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .details{
