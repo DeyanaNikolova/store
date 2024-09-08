@@ -1,0 +1,47 @@
+<mat-toolbar class="mat-toolbar">
+  <a routerLink="home">Store</a>
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon 
+    [matBadge]="itemsQuantity" 
+    [matBadgeHidden]="!itemsQuantity"
+    matBadgeColor="warn"
+    aria-hidden="false"
+      >shopping_cart
+    </mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <div class="menu">
+      <div class="items">
+        <span class="view-cart">{{itemsQuantity}} Items</span>
+        <a routerLink="cart">View Cart</a>
+      </div>
+      <div *ngIf="cart.items.length" class="cart">
+        <div 
+        *ngFor="let item of cart.items"
+        class="item">
+          {{item.name}} x {{item.quantity}}
+          <span class="item-text">{{ item.price| currency }}</span>
+        </div>
+        <div class="total">
+          Total:
+          <span class="total-text">{{ getTotal(cart.items) | currency }}</span>
+        </div>
+        <div class="btn">
+          <button 
+          (click)="onClearCart()"
+          class="remove-cart" w-9 h-9>
+            <mat-icon>remove_shopping_cart</mat-icon>
+          </button>
+          <button
+            routerLink="cart"
+            class="add-cart"
+            w-9
+            h-9
+          >
+            <mat-icon>shopping_cart</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </mat-menu>
+</mat-toolbar>
